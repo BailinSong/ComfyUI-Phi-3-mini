@@ -25,7 +25,7 @@ class Phi3mini_4k_ModelLoader_Zho:
     def load_model(self,):
         model = AutoModelForCausalLM.from_pretrained(
             "microsoft/Phi-3-mini-4k-instruct", 
-            device_map="cuda", 
+            device_map="cpu", 
             torch_dtype="auto", 
             trust_remote_code=True, 
         )
